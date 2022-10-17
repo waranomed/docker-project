@@ -1,0 +1,63 @@
+
+    <form action="validation.php" method="post" id="myform">
+          <fieldset>
+             <legend>CONTACT</legend>
+            
+             <label for="name">NOM:</label>
+             
+             <p>
+                <input type="text" name="nom" id="nom"/></br>
+             </p>
+             <label for="prenom">PRENOM:</label>
+             <p>
+               <input type="text" name="prenom" id="PRENOM"></br>
+             </p>
+             <label for="civilité">civilité</label>
+             <p>
+                
+                  <input type="radio" name="civi" value="Mme" /> Madame
+                  <input type="radio" name="civi" value="Mlle" /> Mademoiselle
+                  <input type="radio" name="civi" value="Mr" /> Monsieur
+             </p>
+
+             <label for="date-de_naissance">Date de naissance</label>
+             
+             <p>
+                <input type="date" name="Date_de_naissance" id="Date_de_naissance"/></br>
+             </p>
+
+             <label for="Ville">Ville</label>
+             <p>
+                <input type="text" name="Ville" id="Ville"/></br>
+             </p>
+             <label for="message">Mot de passe</label>
+             <p>
+                <input id="mdp"  type="password" name="pass" value=""></br>
+
+             </p>
+
+             <label for="c_password">Confirmer mot de passe</label>
+
+             <p>
+                <input type="password" name="c_password" id="cdp" value=""/></br>
+             </p>
+
+             <label for=email>Email</label>
+             <p>
+				<input id=email name="email" type=email placeholder="example@domain.com" required>
+             </p>
+             <label for=postcode>Post code</label>
+             <p>
+			 <input id=postcode name="post_code" type=text required>
+             </p>
+             <label for=adress>Address</label>
+             <p>
+			 <textarea id=adress name="adresse" rows=5 required></textarea>
+            </p>
+            <label for="rue">RUE</label>
+             <p>
+                <input type="text" name="rue" id="rue"/></br>
+             </p>
+         
+             <button type="submit">VALIDER</button>
+             <input type="hidden" name="id_user"/></br>
